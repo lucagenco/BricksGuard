@@ -521,13 +521,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -6.39}
+  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalPosition: {x: -0.23, y: 5.53, z: -19.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!1 &1140545011
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,8 +616,9 @@ GameObject:
   - component: {fileID: 1478384712}
   - component: {fileID: 1478384711}
   - component: {fileID: 1478384710}
+  - component: {fileID: 1478384714}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -698,6 +699,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1478384714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478384709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b976c6d964ebe84898a39aecba4f1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 963194227}
+  Rotate: 0
 --- !u!1 &1598313294
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +746,7 @@ MonoBehaviour:
   scrollContent: {fileID: 1140545011}
   scrollItemsPrefabs:
   - {fileID: 8650409425032419440, guid: 76bb6e51c0837984fab6e4684ff91d40, type: 3}
+  currentBrick: {fileID: 0}
 --- !u!4 &1598313296
 Transform:
   m_ObjectHideFlags: 0
@@ -849,6 +865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f82f974ff1c5f4aa54b02f38e53355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Inventory: {fileID: 1598313295}
+  MaxDubbleTapTime: 0.1
 --- !u!4 &1665071255
 Transform:
   m_ObjectHideFlags: 0

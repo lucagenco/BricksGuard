@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     public ScrollRect scrollRect;
     public GameObject scrollContent;
     public GameObject[] scrollItemsPrefabs;
+    public Brick currentBrick;
     
     void Start()
     {
@@ -29,7 +30,7 @@ public class Inventory : MonoBehaviour
         Button button = slotObject.gameObject.GetComponent<Button>();
         button.onClick.AddListener(delegate ()
         {
-            Debug.Log(brick.brickName);
+            currentBrick = brick;
         });
     }
 }
