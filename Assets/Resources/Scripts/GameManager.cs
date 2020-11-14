@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     public float MaxDubbleTapTime;
     private float NewTime;
 
+    private Vector3 touchStart;
+    public Camera cam;
+
+
     void Start()
     {
         TapCount = 0;
@@ -21,6 +25,29 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         DoubleTabControl();
+        PanningControl();
+    }
+
+    private void PanningControl()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            touchStart = GetWorldPosition(0);
+        }
+        if (Input.GetMouseButton(0))
+        {
+            Vector3 direction = touchStart - GetWorldPosition(0);
+            cam.transform.position += direction;
+        }
+    }
+
+    private Vector3 GetWorldPosition(float z)
+    {
+        Ray mousePos = cam.ScreenPointToRay(Input.mousePosition);
+        Plane ground = new Plane(Vector3.forward, new Vector3(0, 0, z));
+        float distance;
+        ground.Raycast(mousePos, out distance);
+        return mousePos.GetPoint(distance);
     }
 
     public void DoubleTabControl()
@@ -42,11 +69,8 @@ public class GameManager : MonoBehaviour
             else if (TapCount == 2 && Time.time <= NewTime)
             {
                 Vector3 mousePos = Input.mousePosition;
-                Debug.Log("Mouse pos : " + mousePos);
+                mousePos.z = 20;
                 Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-                
-                objectPos.z = -3;
-                Debug.Log("Object pos : " + objectPos);
                 if (Inventory.currentBrick != null)
                 {
                     Instantiate(Inventory.currentBrick.prefab, objectPos, Quaternion.identity);

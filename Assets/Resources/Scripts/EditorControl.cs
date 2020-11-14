@@ -39,7 +39,7 @@ public class EditorControl : MonoBehaviour
                 Camera.transform.Translate(Delta1, Space.World);
         }
 
-        //Pinch
+        /*//Pinch
         if (Input.touchCount >= 2)
         {
             var pos1 = PlanePosition(Input.GetTouch(0).position);
@@ -60,7 +60,7 @@ public class EditorControl : MonoBehaviour
 
             if (Rotate && pos2b != pos2)
                 Camera.transform.RotateAround(pos1, Plane.normal, Vector3.SignedAngle(pos2 - pos1, pos2b - pos1b, Plane.normal));
-        }
+        }*/
 
     }
 
