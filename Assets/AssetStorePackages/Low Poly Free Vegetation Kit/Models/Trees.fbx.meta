@@ -1,9 +1,51 @@
 fileFormatVersion: 2
 guid: 35d16cd66330b3d478844c42dfc1912a
 ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
-  externalObjects: {}
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Tree 1
+    100002: Tree 2
+    100004: Tree 3
+    100006: Tree 4
+    100008: Tree 5
+    100010: //RootNode
+    400000: Tree 1
+    400002: Tree 2
+    400004: Tree 3
+    400006: Tree 4
+    400008: Tree 5
+    400010: //RootNode
+    2300000: Tree 1
+    2300002: Tree 2
+    2300004: Tree 3
+    2300006: Tree 4
+    2300008: Tree 5
+    3300000: Tree 1
+    3300002: Tree 2
+    3300004: Tree 3
+    3300006: Tree 4
+    3300008: Tree 5
+    4300000: Tree 4
+    4300002: Tree 1
+    4300004: Tree 2
+    4300006: Tree 3
+    4300008: Tree 5
+    6400000: Tree 1
+    6400002: Tree 2
+    6400004: Tree 3
+    6400006: Tree 4
+    6400008: Tree 5
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color Pallet
+    second: {fileID: 2100000, guid: b725cacc7387b1f4e991c4bdfcd832c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pine Tree Branch
+    second: {fileID: 2100000, guid: 9c0a1cda53d749f40a30a84ed1657377, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -38,7 +80,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -46,19 +87,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -67,11 +107,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,7 +120,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

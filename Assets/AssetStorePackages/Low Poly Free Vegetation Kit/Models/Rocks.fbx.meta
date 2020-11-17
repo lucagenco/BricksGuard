@@ -1,8 +1,100 @@
 fileFormatVersion: 2
 guid: b028c90d3d17c7849a589391cd891c6c
 ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Big Rock 1
+    100002: Big Rock 2
+    100004: Big Rock 3
+    100006: Big Rock 4
+    100008: Big Rock 5
+    100010: Rock 1
+    100012: Rock 2
+    100014: Rock 3
+    100016: Rock 4
+    100018: Rock 5
+    100020: //RootNode
+    100022: Small Rock 1
+    100024: Small Rock 2
+    100026: Small Rock 3
+    100028: Small Rock 4
+    100030: Small Rock 5
+    400000: Big Rock 1
+    400002: Big Rock 2
+    400004: Big Rock 3
+    400006: Big Rock 4
+    400008: Big Rock 5
+    400010: Rock 1
+    400012: Rock 2
+    400014: Rock 3
+    400016: Rock 4
+    400018: Rock 5
+    400020: //RootNode
+    400022: Small Rock 1
+    400024: Small Rock 2
+    400026: Small Rock 3
+    400028: Small Rock 4
+    400030: Small Rock 5
+    2300000: Big Rock 1
+    2300002: Big Rock 2
+    2300004: Big Rock 3
+    2300006: Big Rock 4
+    2300008: Big Rock 5
+    2300010: Rock 1
+    2300012: Rock 2
+    2300014: Rock 3
+    2300016: Rock 4
+    2300018: Rock 5
+    2300020: Small Rock 1
+    2300022: Small Rock 2
+    2300024: Small Rock 3
+    2300026: Small Rock 4
+    2300028: Small Rock 5
+    3300000: Big Rock 1
+    3300002: Big Rock 2
+    3300004: Big Rock 3
+    3300006: Big Rock 4
+    3300008: Big Rock 5
+    3300010: Rock 1
+    3300012: Rock 2
+    3300014: Rock 3
+    3300016: Rock 4
+    3300018: Rock 5
+    3300020: Small Rock 1
+    3300022: Small Rock 2
+    3300024: Small Rock 3
+    3300026: Small Rock 4
+    3300028: Small Rock 5
+    4300000: Small Rock 1
+    4300002: Small Rock 2
+    4300004: Small Rock 3
+    4300006: Small Rock 4
+    4300008: Small Rock 5
+    4300010: Rock 1
+    4300012: Rock 2
+    4300014: Rock 3
+    4300016: Rock 4
+    4300018: Rock 5
+    4300020: Big Rock 1
+    4300022: Big Rock 2
+    4300024: Big Rock 3
+    4300026: Big Rock 4
+    4300028: Big Rock 5
+    6400000: Big Rock 1
+    6400002: Big Rock 2
+    6400004: Big Rock 3
+    6400006: Big Rock 4
+    6400008: Big Rock 5
+    6400010: Rock 1
+    6400012: Rock 2
+    6400014: Rock 3
+    6400016: Rock 4
+    6400018: Rock 5
+    6400020: Small Rock 1
+    6400022: Small Rock 2
+    6400024: Small Rock 3
+    6400026: Small Rock 4
+    6400028: Small Rock 5
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -43,7 +135,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -51,19 +142,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -72,11 +162,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -86,7 +175,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

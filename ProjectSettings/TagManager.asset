@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - FxTemporaire
   - Ball
   - particles
   layers:
@@ -16,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
+  - PostProcessing
   - volume
-  - 
   - 
   - 
   - 

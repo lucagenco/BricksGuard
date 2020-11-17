@@ -66,15 +66,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private Vector3 GetWorldPosition(float z)
-    {
-        Ray mousePos = cam.ScreenPointToRay(Input.mousePosition);
-        Plane ground = new Plane(Vector3.forward, new Vector3(0, 0, z));
-        float distance;
-        ground.Raycast(mousePos, out distance);
-        return mousePos.GetPoint(distance);
-    }
-
     public void SwipeControl()
     {
         foreach (Touch touch in Input.touches)
@@ -251,43 +242,6 @@ public class GameManager : MonoBehaviour
                 break;
             case 2:
                 gameObjectsDepth3.Add(obj);
-                break;
-        }
-    }
-
-    private void MakeTransparentObject()
-    {
-        switch (Depth)
-        {
-            case 0:
-                foreach(GameObject obj in gameObjectsDepth2)
-                {
-                    
-                }
-                foreach (GameObject obj in gameObjectsDepth3)
-                {
-                    
-                }
-                break;
-            case 1:
-                foreach (GameObject obj in gameObjectsDepth1)
-                {
-                    
-                }
-                foreach (GameObject obj in gameObjectsDepth3)
-                {
-                    
-                }
-                break;
-            case 2:
-                foreach (GameObject obj in gameObjectsDepth1)
-                {
-                    
-                }
-                foreach (GameObject obj in gameObjectsDepth2)
-                {
-                    
-                }
                 break;
         }
     }
