@@ -145,7 +145,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9d69f73a13ce5845a82c60ea3e992e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82fcda7ffea37da45976be3f6ef60b98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: 10
+  defaultNumber: 10
   brickName: Basic Cube
   prefab: {fileID: 7773080388838279466, guid: 8818f0723d076374d911a03ef8845076, type: 3}
 --- !u!114 &1037162885671887836
